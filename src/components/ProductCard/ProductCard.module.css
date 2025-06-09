@@ -1,0 +1,23 @@
+.productCardContainer {
+  padding: 1rem;
+  min-height: 300px;
+}
+
+.productName {
+  margin-bottom: 0.5rem;
+}
+
+.productImage {
+  min-height: 200px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.productButton {
+  margin: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
