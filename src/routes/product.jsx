@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 function Product() {
   return (
     <>
-      <Navbar />
       <div className={`container ${styles.productBody}`}>
         <div className={styles.productImage}></div>
         <div className={styles.productDetails}>

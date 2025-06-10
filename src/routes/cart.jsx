@@ -4,7 +4,6 @@ import styles from "./cart.module.css";
 function Cart() {
   return (
     <>
-      <Navbar />
       <div className={`container`}>
         <h1 className={styles.headerTitle}>Your Cart</h1>
         <ul className={styles.productSelectedList}>

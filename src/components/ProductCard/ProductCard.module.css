@@ -1,5 +1,8 @@
 .productCardContainer {
   min-height: 300px;
+  border: 1px solid grey;
+  padding: 1rem;
+  border-radius: 16px;
 }
 
 .productName {
