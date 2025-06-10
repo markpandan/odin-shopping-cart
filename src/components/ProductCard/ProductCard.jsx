@@ -1,14 +1,15 @@
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./ProductCard.module.css";
 
-function ProductCard() {
+function ProductCard({ product }) {
   const navigate = useNavigate();
 
   return (
-    <Link to={"/product"} style={{ textDecoration: "none" }}>
+    <Link to={`/product/${product.id}`} style={{ textDecoration: "none" }}>
       <div className={styles.productCardContainer}>
-        <figure className={styles.productImage}></figure>
-        <figcaption className={styles.productName}>Product Name</figcaption>
+        <img className={styles.productImage} src={product.image}></img>
+        <h3 className={styles.productName}>{product.title}</h3>
+        <p>${product.price}</p>
         <button
           className={styles.productButton}
           onClick={(e) => {

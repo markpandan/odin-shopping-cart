@@ -1,5 +1,5 @@
 .productCardContainer {
-  min-height: 300px;
+  min-height: 350px;
   border: 1px solid grey;
   padding: 1rem;
   border-radius: 16px;
@@ -8,10 +8,19 @@
 .productName {
   color: black;
   margin-bottom: 0.5rem;
+  width: 0;
+  min-width: 100%;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 
 .productImage {
-  min-height: 200px;
+  height: 200px;
+  object-fit: contain;
   width: 100%;
   background-color: whitesmoke;
   border-radius: 16px;

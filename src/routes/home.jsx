@@ -1,13 +1,15 @@
 import styles from "./home.module.css";
 import ProductCard from "../components/ProductCard/ProductCard";
+// import { useState, useEffect } from "react";
+import useFetchStoreItems from "../hooks/useFetchStoreItems";
 
 function Home() {
-  const dummyContainer = Array(8).fill(null);
+  const [productList] = useFetchStoreItems();
 
   return (
     <div className={`container ${styles.productList}`}>
-      {dummyContainer.map((_, index) => (
-        <ProductCard key={index}></ProductCard>
+      {productList.map((product, index) => (
+        <ProductCard key={index} product={product}></ProductCard>
       ))}
     </div>
   );
