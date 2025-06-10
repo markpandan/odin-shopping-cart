@@ -7,3 +7,16 @@
   margin: auto;
   max-width: 1140px;
 }
+
+/* To remove the arrows to the input element with number types */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

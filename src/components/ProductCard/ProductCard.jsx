@@ -1,8 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./ProductCard.module.css";
 
-function ProductCard({ product }) {
-  const navigate = useNavigate();
+function ProductCard({ product, onButtonClick }) {
+  // const navigate = useNavigate();
 
   return (
     <Link to={`/product/${product.id}`} style={{ textDecoration: "none" }}>
@@ -15,7 +15,7 @@ function ProductCard({ product }) {
           onClick={(e) => {
             e.stopPropagation();
             e.preventDefault();
-            navigate("/cart");
+            onButtonClick();
           }}
         >
           Add To Cart
