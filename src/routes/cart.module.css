@@ -1,0 +1,47 @@
+.headerTitle {
+  margin-bottom: 24px;
+}
+
+.productSelectedList {
+  list-style: none;
+  padding: 0;
+}
+
+.productSelectedList > li {
+  width: 100%8;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+.productImage {
+  background-color: whitesmoke;
+  width: 150px;
+  height: 150px;
+  border-radius: 16px;
+}
+
+.productDetail {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productQuantity {
+  display: flex;
+  gap: 16px;
+}
+
+.productQuantity > button {
+  border-radius: 8px;
+  border: 1px solid grey;
+  width: 24px;
+}
+
+.productQuantity > p {
+  margin: auto;
+}

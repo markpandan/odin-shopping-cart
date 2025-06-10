@@ -1,9 +1,9 @@
 .productCardContainer {
-  padding: 1rem;
   min-height: 300px;
 }
 
 .productName {
+  color: black;
   margin-bottom: 0.5rem;
 }
 
@@ -17,7 +17,13 @@
 
 .productButton {
   margin: auto;
+  cursor: pointer;
+
   padding: 0.5rem;
   border-radius: 8px;
   border: 1px solid gray;
+}
+
+.productButton:hover {
+  background-color: white;
 }

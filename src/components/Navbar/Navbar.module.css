@@ -1,5 +1,10 @@
-.navbarContainer {
+nav {
   background-color: lightgreen;
   padding: 1rem 0.5rem;
   margin-bottom: 2rem;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
 }
