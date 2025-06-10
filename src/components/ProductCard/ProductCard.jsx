@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import styles from "./ProductCard.module.css";
 
 function ProductCard({ product, onButtonClick }) {
-  // const navigate = useNavigate();
-
   return (
     <Link to={`/product/${product.id}`} style={{ textDecoration: "none" }}>
       <div className={styles.productCardContainer}>
