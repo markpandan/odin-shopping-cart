@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./ProductCard.module.css";
+import PropTypes from "prop-types";
 
 function ProductCard({ product, onButtonClick }) {
   return (
@@ -22,5 +23,16 @@ function ProductCard({ product, onButtonClick }) {
     </Link>
   );
 }
+
+ProductCard.PropTypes = {
+  product: PropTypes.exact({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    price: PropTypes.number,
+    image: PropTypes.string,
+    quantity: PropTypes.number,
+  }).isRequired,
+  onButtonClick: PropTypes.func.isRequired,
+};
 
 export default ProductCard;

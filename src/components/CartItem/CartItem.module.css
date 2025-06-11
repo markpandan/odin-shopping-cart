@@ -1,0 +1,35 @@
+.cartImage {
+  background-color: whitesmoke;
+  width: 150px;
+  height: 150px;
+  border-radius: 16px;
+}
+
+.cartDetail {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartPrice {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.cartQuantity {
+  display: flex;
+  gap: 8px;
+}
+
+.cartQuantity > button {
+  border-radius: 8px;
+  border: 1px solid grey;
+  width: 24px;
+}
+
+.cartQuantity > input {
+  text-align: center;
+  width: 32px;
+  border-radius: 8px;
+}

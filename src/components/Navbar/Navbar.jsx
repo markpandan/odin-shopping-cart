@@ -6,7 +6,7 @@ function Navbar() {
     <nav>
       <div className={`container ${styles.navbarContainer}`}>
         <Link to={"/"} style={{ textDecoration: "none" }}>
-          <p>Shop To Go!</p>
+          <p>Shop And Go!</p>
         </Link>
 
         <Link to={"/cart"}>

@@ -22,42 +22,6 @@ hr {
   margin-bottom: 1rem;
 }
 
-.productImage {
-  background-color: whitesmoke;
-  width: 150px;
-  height: 150px;
-  border-radius: 16px;
-}
-
-.productDetail {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.productQuantity {
-  display: flex;
-  gap: 8px;
-}
-
-.productQuantity > button {
-  border-radius: 8px;
-  border: 1px solid grey;
-  width: 24px;
-}
-
-.productQuantity > input {
-  text-align: center;
-  width: 32px;
-  border-radius: 8px;
-}
-
-.productPrice {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
 .cartDetails {
   display: flex;
   justify-content: end;
