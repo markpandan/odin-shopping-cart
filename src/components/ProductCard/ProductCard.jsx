@@ -1,30 +1,27 @@
-import { Link } from "react-router-dom";
 import styles from "./ProductCard.module.css";
 import PropTypes from "prop-types";
 
-function ProductCard({ product, onButtonClick }) {
+function ProductCard(props) {
   return (
-    <Link to={`/product/${product.id}`} style={{ textDecoration: "none" }}>
-      <div className={styles.productCardContainer}>
-        <img className={styles.productImage} src={product.image}></img>
-        <h3 className={styles.productName}>{product.title}</h3>
-        <p>${product.price}</p>
-        <button
-          className={styles.productButton}
-          onClick={(e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            onButtonClick();
-          }}
-        >
-          Add To Cart
-        </button>
-      </div>
-    </Link>
+    <div className={styles.productCardContainer}>
+      <img className={styles.productImage} src={props.product.image}></img>
+      <h3 className={styles.productName}>{props.product.title}</h3>
+      <p>${props.product.price}</p>
+      <button
+        className={styles.productButton}
+        onClick={(e) => {
+          e.stopPropagation();
+          e.preventDefault();
+          props.onButtonClick();
+        }}
+      >
+        Add To Cart
+      </button>
+    </div>
   );
 }
 
-ProductCard.PropTypes = {
+ProductCard.propTypes = {
   product: PropTypes.exact({
     id: PropTypes.number,
     title: PropTypes.string,

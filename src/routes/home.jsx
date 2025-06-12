@@ -1,7 +1,7 @@
 import styles from "./home.module.css";
 import ProductCard from "../components/ProductCard/ProductCard";
 import useFetchStoreItems from "../hooks/useFetchStoreItems";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, Link } from "react-router-dom";
 
 function Home() {
   const [productList] = useFetchStoreItems();
@@ -20,11 +20,16 @@ function Home() {
   return (
     <div className={`container ${styles.productList}`}>
       {productList.map((product, index) => (
-        <ProductCard
+        <Link
           key={index}
-          product={product}
-          onButtonClick={() => onAddCartItem(product)}
-        ></ProductCard>
+          to={`/product/${product.id}`}
+          style={{ textDecoration: "none" }}
+        >
+          <ProductCard
+            product={product}
+            onButtonClick={() => onAddCartItem(product)}
+          />
+        </Link>
       ))}
     </div>
   );

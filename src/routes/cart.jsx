@@ -4,6 +4,7 @@ import CartItem from "../components/CartItem/CartItem";
 
 function Cart() {
   const [cartItems, _, changeCartItemQuantity] = useOutletContext();
+
   if (cartItems.length === 0) {
     return (
       <div className="container">
